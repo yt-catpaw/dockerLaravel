@@ -8,6 +8,8 @@ services:
       - ./src:/var/www
     environment:
       TZ: 'Asia/Tokyo'
+    ports:
+      - 5173:5173
 
   web :
     image: nginx:1.20-alpine
